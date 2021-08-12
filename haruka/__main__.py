@@ -14,11 +14,11 @@ from haruka import dispatcher, updater, TOKEN, WEBHOOK, SUDO_USERS, OWNER_ID, CE
     ALLOW_EXCL
 # needed to dynamically load modules
 # NOTE: Module order is not guaranteed, specify that in the config file!
-from haruka.modules import ALL_MODULES
-from haruka.modules.helper_funcs.chat_status import is_user_admin
-from haruka.modules.helper_funcs.misc import paginate_modules
-from haruka.modules.translations.strings import tld, tld_help 
-from haruka.modules.connection import connected
+from Elena.modules import ALL_MODULES
+from Elena.modules.helper_funcs.chat_status import is_user_admin
+from Elena.modules.helper_funcs.misc import paginate_modules
+from Elena.modules.translations.strings import tld, tld_help 
+from Elena.modules.connection import connected
 
 PM_START = """Hello {}, my name is {}!
 
@@ -29,17 +29,15 @@ I'm group manager bot and Anti-spam for RR Players🃏
 Activate Anti-spam protection in your BM by this command : 
 /antispam on 
 
-Made from the source code of [Aditya 🇮🇳](t.me/xditya)
+Made from the source code of [@tharukaliyanage](t.me/tharukaliyanage)
 
-Special thanks to [this person](t.me/denver02) for helping me.
+Special thanks to [@tharukaliyanage](t.me/tharukaliyanage) for helping me.
 
-Deploy a bot like me [now](www.github.com/xditya/GroupManager)
 
-Watch [video tutorial](https://www.youtube.com/watch?v=gXXFpTAk6Vo&feature=youtu.be) on deploying me.
 
 Click /help or Help button below to find out more about how to use me to my full potential.
 
- Add me to a group by clicking [here](http://t.me/tg_GroupManagerBot?startgroup=true).
+ Add me to a group by clicking [here](http://t.me/TheTharuBot?startgroup=true).
 """
 
 
@@ -57,7 +55,7 @@ USER_SETTINGS = {}
 GDPR = []
 
 for module_name in ALL_MODULES:
-    imported_module = importlib.import_module("haruka.modules." + module_name)
+    imported_module = importlib.import_module("ELENA.modules." + module_name)
     if not hasattr(imported_module, "__mod_name__"):
         imported_module.__mod_name__ = imported_module.__name__
 
