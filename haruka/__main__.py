@@ -20,28 +20,44 @@ from haruka.modules.helper_funcs.misc import paginate_modules
 from haruka.modules.translations.strings import tld, tld_help 
 from haruka.modules.connection import connected
 
-PM_START = """Hello {}, my name is {}!
-
-You know how hard it is sometimes to manage group so here is the solution for you
-
-I'm group manager bot and Anti-spam for RR Players🃏
-
-Activate Anti-spam protection in your BM by this command : 
-/antispam on 
-
-Made from the source code of [Aditya 🇮🇳](t.me/xditya)
-
-Special thanks to [this person](t.me/denver02) for helping me.
-
-Deploy a bot like me [now](www.github.com/xditya/GroupManager)
-
-Watch [video tutorial](https://www.youtube.com/watch?v=gXXFpTAk6Vo&feature=youtu.be) on deploying me.
-
-Click /help or Help button below to find out more about how to use me to my full potential.
-
- Add me to a group by clicking [here](http://t.me/tg_GroupManagerBot?startgroup=true).
+PM_START_TEXT = f"""
+Hello, \n I'M ELENA 
+ɪ'ᴍ ʜᴇʀᴇ ᴛᴏ ʜᴇʟᴘ ʏᴏᴜ ᴍᴀɴᴀɢᴇ ʏᴏᴜʀ[️️ ️](https://telegra.ph/file/7e0ce49076c49e9768f07.jpg)ɢʀᴏᴜᴘꜱ! ʜɪᴛ /help
+Maintained by @tharukaliyanage ❤
 """
 
+buttons = [
+    [
+        InlineKeyboardButton(
+            text="➕️ ᴀᴅᴅ ᴛᴏ ʏᴏᴜʀ ɢʀᴏᴜᴘ ➕️", url="t.me/TheTharuBot?startgroup=true"),
+    ],
+    [
+        InlineKeyboardButton(text="ᴀʙᴏᴜᴛ", callback_data="elena_"),
+        InlineKeyboardButton(
+            text="ꜱᴜᴘᴘᴏʀᴛ", url=f"https://t.me/{SUPPORT_CHAT}"
+        ),
+    ],
+    [
+        InlineKeyboardButton(text="ʟᴏɢꜱ", url=f"https://t.me/THARUElenaLogs"),
+        InlineKeyboardButton(
+            text="System Stats 💻", callback_data="stats_callback"
+        ),
+    ],
+    [
+        InlineKeyboardButton(text="ʜᴇʟᴘ & ᴄᴏᴍᴍᴀɴᴅꜱ ⛑", callback_data="help_back"),
+    ],
+]
+
+
+HELP_STRINGS = """
+`Hi.. I'M` ELENA    [️️ ️](https://telegra.ph/file/7e0ce49076c49e9768f07.jpg)
+`ᴄʟɪᴄᴋ ᴏɴ ᴛʜᴇ ʙᴜᴛᴛᴏɴꜱ ʙᴇʟᴏᴡ ᴛᴏ ɢᴇᴛ ᴅᴏᴄᴜᴍᴇɴᴛᴀᴛɪᴏɴ ᴀʙᴏᴜᴛ ꜱᴘᴇᴄɪꜰɪᴄ ᴍᴏᴅᴜʟᴇꜱ..`
+Powered by @tharukaliyanage """
+
+DONATE_STRING = """Hey, glad to hear you want to donate!
+ You can support the project Of [@tharukaliyanage](t.me/tharukaliyanage) \
+ Supporting isnt always financial! [ElenaBotTharu](t.me/ElenaBotTharu) \
+ Those who cannot provide monetary support are welcome to help us develop the bot at ."""
 
 IMPORTED = {}
 MIGRATEABLE = []
