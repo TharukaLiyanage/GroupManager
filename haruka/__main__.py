@@ -29,17 +29,15 @@ I'm group manager bot and Anti-spam for RR Players🃏
 Activate Anti-spam protection in your BM by this command : 
 /antispam on 
 
-Made from the source code of [Aditya 🇮🇳](t.me/xditya)
-
-Special thanks to [this person](t.me/denver02) for helping me.
+Made from the source code of [Tharukz](t.me/TharukzGamingYT).
 
 Deploy a bot like me [now](www.github.com/xditya/GroupManager)
 
-Watch [video tutorial](https://www.youtube.com/watch?v=gXXFpTAk6Vo&feature=youtu.be) on deploying me.
+Watch [Youtube](https://www.youtube.com/c/TharukzGaming) on help me.
 
 Click /help or Help button below to find out more about how to use me to my full potential.
 
- Add me to a group by clicking [here](http://t.me/tg_GroupManagerBot?startgroup=true).
+ Add me to a group by clicking [here](http://t.me/TheWhiteTharukzBot?startgroup=true).
 """
 
 
